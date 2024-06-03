@@ -92,16 +92,16 @@
             <span class="author-block">
               <a href="https://web.eecs.umich.edu/~fouhey/">David Fouhey</a><sup>4</sup>,
             </span>
-          </div>
-          <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://web.eecs.umich.edu/~fouhey/">Tong Zhao</a><sup>2</sup>,
             </span>
+          </div>
+          <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://web.eecs.umich.edu/~chaijy/">Neil Shah</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://web.eecs.umich.edu/~chaijy/">Danai Koutra</a><sup>1</sup>,
+              <a href="https://web.eecs.umich.edu/~chaijy/">Danai Koutra</a><sup>1</sup>
             </span>
           </div>
 
@@ -116,7 +116,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2309.12311"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -124,7 +124,7 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
@@ -135,14 +135,14 @@
                 </a>
               </span> -->
               <!-- Demo Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="http://sled-whistler.eecs.umich.edu:7777/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Live Demo</span>
-                  </a>
+                  </a> -->
               <!-- Video Link. -->
               <span class="link-block">
                 <a href="https://youtu.be/eO-Vaf-1R1s"
@@ -150,7 +150,7 @@
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video Demo</span>
+                  <span>Dataset</span>
                 </a>
               </span>
               <!-- Demo Link. -->
@@ -165,7 +165,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/sled-group/chat-with-nerf"
+                <a href="https://github.com/mm-graph-benchmark/mm-graph-benchmark"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -181,6 +181,52 @@
     </div>
   </div>
 </section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Associating unstructured data with structured information is crucial for real-world tasks that require relevance search. However, existing graph learning benchmarks often overlook the rich semantic information inherent in each node. To bridge such gap, we introduce the Multimodal Graph Benchmark (MM-Graph), the first comprehensive multi-modal graph benchmark that incorporates both textual and visual information. MM-Graph surpasses previous efforts, which have primarily focused on text-attributed graphs with various connectivity patterns. 
+            MM-Graph consists of five graph learning datasets of various scales and tasks. These datasets feature multimodal node features, enabling a more comprehensive evaluation of graph learning algorithms in real-world scenarios. To facilitate research on multimodal graph learning, we further provide an extensive study on the performance of various graph neural networks in the presence of features from various modalities. MM-Graph aims to foster research on multimodal graph learning and drive the development of more advanced and robust graph learning algorithms. By providing a diverse set of datasets and benchmarks, MM-Graph enables researchers to evaluate and compare their models in realistic settings, ultimately leading to improved performance on real-world applications that rely on relevance search in multimodal graph data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-centered is-four-fifths">
+          <h2 class="title is-3">Dataset Visualization</h2>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <!-- <div></div> -->
+        <!-- Your image here -->
+        <img src="static/images/teaser.png" width="80%" alt="Generalist outputs" />
+        <!-- <div>Visualization of our Multimodal Graph Benchmark. All nodes of our benchmark have both visual and text features. \textbf{(a) Amazon-Sports:} The image and text come from the original image and title of the sports equipment. \textbf{(b) Goodreads-LP:} The image comes from the cover of the book. We do not show the text features of Goodreads-LP since the book description is very long. \textbf{(c) Ele-fashion:} The image and text come from the original image and title of the fashion product.</div> -->
+      </div>
+      <div class="column is-centered has-text-centered">
+        <div class="content is-centered has-text-justified">
+          <p>
+            Visualization of our Multimodal Graph Benchmark. All nodes of our benchmark have both visual and text features. <strong>(a) Amazon-Sports:</strong> The image and text come from the original image and title of the sports equipment. <strong>(b) Goodreads-LP:</strong> The image comes from the cover of the book. We do not show the text features of Goodreads-LP since the book description is very long. <strong>(c) Ele-fashion:</strong> The image and text come from the original image and title of the fashion product.
+          </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+
+
+<!-- End paper abstract -->
 
 <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -242,13 +288,10 @@
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">Citation</h2>
-    <pre><code>@misc{yang2023llmgrounder,
-      title={LLM-Grounder: Open-Vocabulary 3D Visual Grounding with Large Language Model as an Agent}, 
-      author={Jianing Yang and Xuweiyi Chen and Shengyi Qian and Nikhil Madaan and Madhavan Iyengar and David F. Fouhey and Joyce Chai},
-      year={2023},
-      eprint={2309.12311},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+    <pre><code>@misc{zhu2024multimodal,
+    title={Multimodal Graph Benchmark}, 
+    author={Jing Zhu and Yuhang Zhou and Shengyi Qian and Zhongmou He and David F. Fouhey and Tong Zhao and Neil Shah and Danai Koutra},
+    year={2024},
 }</code></pre>
   </div>
 </section> -->
